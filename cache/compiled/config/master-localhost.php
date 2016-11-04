@@ -1,138 +1,71 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1477595834,
-    'checksum' => '0236203c1839967b74a52c4b5371a1e7',
+    'timestamp' => 1478271293,
+    'checksum' => 'b22abda9a2d01d27fe0be49bebfb3f4b',
     'files' => [
         'user/config' => [
-            'media' => [
-                'file' => 'user/config/media.yaml',
-                'modified' => 1477595693
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1477179726
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
-                'modified' => 1477595693
+                'modified' => 1478271293
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1477179656
-            ],
-            'streams' => [
-                'file' => 'user/config/streams.yaml',
-                'modified' => 1477595693
+                'modified' => 1477179726
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1477595822
+                'modified' => 1477179726
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179726
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179726
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179726
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179726
             ]
         ],
         'user/plugins' => [
-            'plugins/admin' => [
-                'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1477179656
-            ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179728
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179728
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1477179656
-            ],
-            'plugins/login' => [
-                'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1477179656
-            ],
-            'plugins/markdown-notices' => [
-                'file' => 'user/plugins/markdown-notices/markdown-notices.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179730
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1477179656
+                'modified' => 1477179730
             ]
         ]
     ],
     'data' => [
         'plugins' => [
-            'admin' => [
-                'enabled' => true,
-                'route' => '/admin',
-                'cache_enabled' => false,
-                'theme' => 'grav',
-                'logo_text' => '',
-                'body_classes' => '',
-                'sidebar' => [
-                    'activate' => 'tab',
-                    'hover_delay' => 100,
-                    'size' => 'auto'
-                ],
-                'dashboard' => [
-                    'days_of_stats' => 7
-                ],
-                'widgets' => [
-                    'dashboard-maintenance' => true,
-                    'dashboard-statistics' => true,
-                    'dashboard-notifications' => true,
-                    'dashboard-feed' => true,
-                    'dashboard-pages' => true
-                ],
-                'session' => [
-                    'timeout' => 1800
-                ],
-                'warnings' => [
-                    'delete_page' => true
-                ],
-                'edit_mode' => 'normal',
-                'show_github_msg' => true,
-                'google_fonts' => true,
-                'enable_auto_updates_check' => true,
-                'notifications' => [
-                    'feed' => true,
-                    'dashboard' => true,
-                    'plugins' => true,
-                    'themes' => true
-                ],
-                'popularity' => [
-                    'enabled' => true,
-                    'ignore' => [
-                        0 => '/test*',
-                        1 => '/modular'
-                    ],
-                    'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
-                    ]
-                ]
-            ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
+                'from' => 'your@email.here',
                 'from_name' => NULL,
-                'to' => NULL,
+                'to' => 'your@email.here',
                 'to_name' => NULL,
                 'mailer' => [
                     'engine' => 'mail',
@@ -169,56 +102,6 @@ return [
                     'accept' => [
                         0 => 'image/*'
                     ]
-                ]
-            ],
-            'login' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'route' => false,
-                'route_register' => false,
-                'route_activate' => '/activate_user',
-                'route_forgot' => '/forgot_password',
-                'route_reset' => '/reset_password',
-                'redirect_after_login' => NULL,
-                'parent_acl' => false,
-                'protect_protected_page_media' => false,
-                'user_registration' => [
-                    'enabled' => true,
-                    'fields' => [
-                        0 => 'username',
-                        1 => 'password',
-                        2 => 'email',
-                        3 => 'fullname',
-                        4 => 'title'
-                    ],
-                    'access' => [
-                        'site' => [
-                            'login' => 'true'
-                        ]
-                    ],
-                    'options' => [
-                        'validate_password1_and_password2' => true,
-                        'set_user_disabled' => false,
-                        'login_after_registration' => true,
-                        'send_activation_email' => false,
-                        'send_notification_email' => false,
-                        'send_welcome_email' => false
-                    ]
-                ],
-                'rememberme' => [
-                    'enabled' => true,
-                    'timeout' => 604800,
-                    'name' => 'grav-rememberme'
-                ]
-            ],
-            'markdown-notices' => [
-                'enabled' => true,
-                'built_in_css' => true,
-                'level_classes' => [
-                    0 => 'yellow',
-                    1 => 'red',
-                    2 => 'blue',
-                    3 => 'green'
                 ]
             ],
             'problems' => [
@@ -485,17 +368,17 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Free Responsive HTML5/CSS3 Template',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@test.com'
+                'name' => 'Peter Finla',
+                'email' => 'john@email.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops.'
             ],
             'summary' => [
                 'enabled' => true,
@@ -507,6 +390,57 @@ return [
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'header' => [
+                'title' => 'I\'m Jonathan Doe.',
+                'description' => 'I\'m a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and effective visual identities for companies of all sizes around the globe. Let\'s <a class="smoothscroll" href="#about">start scrolling</a> and learn more <a class="smoothscroll" href="#about">about me</a>.'
+            ],
+            'copyright' => [
+                0 => [
+                    'line' => 'Copyright 2014 CeeVee'
+                ],
+                1 => [
+                    'line' => 'Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>'
+                ]
+            ],
+            'social' => [
+                0 => [
+                    'url' => '#',
+                    'icon' => 'facebook'
+                ],
+                1 => [
+                    'url' => '#',
+                    'icon' => 'twitter'
+                ],
+                2 => [
+                    'url' => '#',
+                    'icon' => 'google-plus'
+                ],
+                3 => [
+                    'url' => '#',
+                    'icon' => 'linkedin'
+                ],
+                4 => [
+                    'url' => '#',
+                    'icon' => 'instagram'
+                ],
+                5 => [
+                    'url' => '#',
+                    'icon' => 'dribbble'
+                ],
+                6 => [
+                    'url' => '#',
+                    'icon' => 'skype'
+                ]
+            ],
+            'twitter' => [
+                'id' => '657554810648948736',
+                'domId' => 'tw-widget1',
+                'maxTweets' => 3,
+                'enableLinks' => 'true',
+                'showInteraction' => 'false',
+                'showImages' => 'false',
+                'showUser' => 'false'
             ]
         ],
         'streams' => [
@@ -557,7 +491,7 @@ return [
                 'hide_in_urls' => false
             ],
             'pages' => [
-                'theme' => 'antimatter',
+                'theme' => 'ceevee',
                 'order' => [
                     'by' => 'default',
                     'dir' => 'asc'
@@ -581,7 +515,7 @@ return [
                     'twig' => true
                 ],
                 'markdown' => [
-                    'extra' => false,
+                    'extra' => true,
                     'auto_line_breaks' => false,
                     'auto_url_links' => false,
                     'escape_markup' => false,
@@ -625,7 +559,7 @@ return [
                 ]
             ],
             'cache' => [
-                'enabled' => true,
+                'enabled' => false,
                 'check' => [
                     'method' => 'file'
                 ],
@@ -663,7 +597,7 @@ return [
                 ]
             ],
             'errors' => [
-                'display' => true,
+                'display' => 0,
                 'log' => true
             ],
             'debugger' => [
@@ -707,7 +641,7 @@ return [
             ]
         ],
         'security' => [
-            'salt' => 'Ty4r2epbGN6oKq'
+            'salt' => 'DSvWiZ93Ry5fgm'
         ]
     ]
 ];

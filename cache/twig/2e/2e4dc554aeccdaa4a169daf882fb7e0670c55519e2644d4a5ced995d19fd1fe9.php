@@ -24,45 +24,19 @@ class __TwigTemplate_e5ea613d2513799a467493d59b461d5319bfcf8739a23ba8ff641bd87db
         // line 5
         echo "  <div class=\"row banner\">
     <div class=\"banner-text\">
-      <h1 class=\"responsive-headline\">";
+      <h1 class=\"responsive-headline\"><img src=\"";
         // line 7
-        echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "header", array()), "title", array());
-        echo "</h1>
+        echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "header", array()), "logo", array());
+        echo "\" style=\"text-align: center; width: 250px; margin-bottom: 30px;\"/></h1>
       <h3>";
         // line 8
         echo $this->getAttribute($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "header", array()), "description", array());
         echo "</h3>
       <hr />
-      ";
-        // line 10
-        if ($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "social", array())) {
-            // line 11
-            echo "      <ul class=\"social\">
-        ";
-            // line 12
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["site"]) ? $context["site"] : null), "social", array()));
-            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-                // line 13
-                echo "        <li><a href=\"";
-                echo $this->getAttribute($context["item"], "url", array());
-                echo "\"><i class=\"fa fa-";
-                echo $this->getAttribute($context["item"], "icon", array());
-                echo "\"></i></a></li>
-        ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 15
-            echo "      </ul>
-      ";
-        }
-        // line 17
-        echo "    </div>
+    </div>
   </div>
   <p class=\"scrolldown\">
-    <a class=\"smoothscroll\" href=\"#about\"><i class=\"icon-down-circle\"></i></a>
+    <a class=\"smoothscroll\" href=\"#work\"><i class=\"icon-down-circle\"></i></a>
   </p>
 </header>
 ";
@@ -90,7 +64,7 @@ class __TwigTemplate_e5ea613d2513799a467493d59b461d5319bfcf8739a23ba8ff641bd87db
 
     public function getDebugInfo()
     {
-        return array (  78 => 4,  75 => 3,  72 => 2,  62 => 17,  58 => 15,  47 => 13,  43 => 12,  40 => 11,  38 => 10,  33 => 8,  29 => 7,  25 => 5,  23 => 2,  20 => 1,);
+        return array (  52 => 4,  49 => 3,  46 => 2,  33 => 8,  29 => 7,  25 => 5,  23 => 2,  20 => 1,);
     }
 
     public function getSource()
@@ -101,20 +75,13 @@ class __TwigTemplate_e5ea613d2513799a467493d59b461d5319bfcf8739a23ba8ff641bd87db
   {% endblock %}
   <div class=\"row banner\">
     <div class=\"banner-text\">
-      <h1 class=\"responsive-headline\">{{ site.header.title }}</h1>
+      <h1 class=\"responsive-headline\"><img src=\"{{ site.header.logo }}\" style=\"text-align: center; width: 250px; margin-bottom: 30px;\"/></h1>
       <h3>{{ site.header.description }}</h3>
       <hr />
-      {% if site.social %}
-      <ul class=\"social\">
-        {% for item in site.social %}
-        <li><a href=\"{{ item.url }}\"><i class=\"fa fa-{{ item.icon }}\"></i></a></li>
-        {% endfor %}
-      </ul>
-      {% endif %}
     </div>
   </div>
   <p class=\"scrolldown\">
-    <a class=\"smoothscroll\" href=\"#about\"><i class=\"icon-down-circle\"></i></a>
+    <a class=\"smoothscroll\" href=\"#work\"><i class=\"icon-down-circle\"></i></a>
   </p>
 </header>
 ";

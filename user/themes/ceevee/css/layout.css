@@ -409,12 +409,12 @@ ul#nav li.current a { color: #F06000; }
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#work {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#work h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -424,7 +424,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 /* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
+#work-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -816,6 +816,18 @@ call-to-action .button {
    color: #ebeeee;
 }
 
+#contact p.lead {
+    color: #858585;
+}
+
+#contact p.lead span,
+#contact p.lead a {
+   color: #fff;
+}
+#contact p.lead a {
+    text-decoration: underline;
+}
+
 #contact h4 {
    font: 16px/24px 'opensans-bold', sans-serif;
    color: #EBEEEE;
@@ -827,6 +839,13 @@ call-to-action .button {
 }
 #contact .header-col { padding-top: 6px; }
 
+#contact .row .eight.columns {
+    color: #858585;
+}
+
+#contact p.address {
+    color: #858585;
+}
 
 /* contact form */
 #contact form { margin-bottom: 30px; }

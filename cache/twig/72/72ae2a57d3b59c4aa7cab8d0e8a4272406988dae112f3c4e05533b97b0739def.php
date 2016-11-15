@@ -18,72 +18,31 @@ class __TwigTemplate_289564a24c706e12c69b3164455d3f758f38419afcda17275449d185ddb
         // line 1
         echo "<section id=\"contact\">
     <div class=\"row section-head\">
-        <div class=\"two columns header-col\">
-            <h1><span>";
-        // line 4
-        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "title", array());
-        echo "</span></h1>
-        </div>
-        <div class=\"ten columns\">
-            <p class=\"lead\">";
-        // line 7
-        echo $this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "lead", array());
-        echo "</p>
+        <!-- <div class=\"two columns header-col\">
+            <h1><span></span></h1>
+        </div> -->
+        <div class=\"twelve columns\">
+            <p class=\"lead\">
+                <span>Muriel</span> attended the <span>Art Academy School of Brussels, Belgium</span> and continued her education in watercolors upon her arrival in the <span>United States.</span><br />
+                She loves to paint scenes from places she visited while traveling (<span>Paris</span>, <span>Provence</span>, <span>Italy</span>, <span>Tahiti</span>) and from her current hometown of <span>Chicago</span>.  She paints with great spontaneity in <span>vibrant</span>, <span>bright colors</span>.<br />
+                <span style=\"color: #858585; font-size: 14px;line-height: 25px; padding-top: 10px;display: block;\">
+                    Her work has been featured at several galleries, exhibits and art shows: <br />
+                    St Charles Country Club, Deep Creek Art Gallerie in Hinsdale, Rush Presbyterian Hospital, Naperville Art League, Hinsdale Fine Arts Show, Graue Mill Fine Arts Festival, Mayslake Peabody Estate, Downers Grove Art Festival, etc.
+                </span>
+            </p>
         </div>
     </div>
     <div class=\"row\">
-        <div class=\"eight columns\">
-            ";
-        // line 12
+        <div class=\"twelve columns\">
+            <span style=\"text-align: center; padding-bottom: 20px;color: #cacaca;display: block;\">";
+        // line 19
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
-        echo "
+        echo "</span>
             ";
-        // line 13
-        $this->loadTemplate("forms/form.html.twig", "modular/form.html.twig", 13)->display($context);
-        // line 14
+        // line 20
+        $this->loadTemplate("forms/form.html.twig", "modular/form.html.twig", 20)->display($context);
+        // line 21
         echo "        </div>
-        <aside class=\"four columns footer-widgets\">
-            ";
-        // line 16
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "widgets", array()));
-        foreach ($context['_seq'] as $context["_key"] => $context["widget"]) {
-            // line 17
-            echo "            <div class=\"widget widget_contact\">
-                <h4>";
-            // line 18
-            echo $this->getAttribute($context["widget"], "title", array());
-            echo "</h4>
-                <p class=\"address\">
-                    ";
-            // line 20
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["widget"], "content", array()));
-            foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-                // line 21
-                echo "                    ";
-                echo $this->getAttribute($context["item"], "line", array());
-                echo " <br />
-                    ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 23
-            echo "                </p>
-            </div>
-            ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['widget'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
-        echo "            <div class=\"widget widget_tweets\">
-                <h4 class=\"widget-title\">Latest Tweets</h4>
-                <div id=\"tw-widget1\">
-                </div>
-            </div>
-        </aside>
     </div>
 </section>
 ";
@@ -101,42 +60,32 @@ class __TwigTemplate_289564a24c706e12c69b3164455d3f758f38419afcda17275449d185ddb
 
     public function getDebugInfo()
     {
-        return array (  81 => 26,  73 => 23,  64 => 21,  60 => 20,  55 => 18,  52 => 17,  48 => 16,  44 => 14,  42 => 13,  38 => 12,  30 => 7,  24 => 4,  19 => 1,);
+        return array (  45 => 21,  43 => 20,  39 => 19,  19 => 1,);
     }
 
     public function getSource()
     {
         return "<section id=\"contact\">
     <div class=\"row section-head\">
-        <div class=\"two columns header-col\">
-            <h1><span>{{ page.header.title }}</span></h1>
-        </div>
-        <div class=\"ten columns\">
-            <p class=\"lead\">{{ page.header.lead }}</p>
+        <!-- <div class=\"two columns header-col\">
+            <h1><span></span></h1>
+        </div> -->
+        <div class=\"twelve columns\">
+            <p class=\"lead\">
+                <span>Muriel</span> attended the <span>Art Academy School of Brussels, Belgium</span> and continued her education in watercolors upon her arrival in the <span>United States.</span><br />
+                She loves to paint scenes from places she visited while traveling (<span>Paris</span>, <span>Provence</span>, <span>Italy</span>, <span>Tahiti</span>) and from her current hometown of <span>Chicago</span>.  She paints with great spontaneity in <span>vibrant</span>, <span>bright colors</span>.<br />
+                <span style=\"color: #858585; font-size: 14px;line-height: 25px; padding-top: 10px;display: block;\">
+                    Her work has been featured at several galleries, exhibits and art shows: <br />
+                    St Charles Country Club, Deep Creek Art Gallerie in Hinsdale, Rush Presbyterian Hospital, Naperville Art League, Hinsdale Fine Arts Show, Graue Mill Fine Arts Festival, Mayslake Peabody Estate, Downers Grove Art Festival, etc.
+                </span>
+            </p>
         </div>
     </div>
     <div class=\"row\">
-        <div class=\"eight columns\">
-            {{ page.content }}
+        <div class=\"twelve columns\">
+            <span style=\"text-align: center; padding-bottom: 20px;color: #cacaca;display: block;\">{{ page.content }}</span>
             {% include \"forms/form.html.twig\" %}
         </div>
-        <aside class=\"four columns footer-widgets\">
-            {% for widget in page.header.widgets %}
-            <div class=\"widget widget_contact\">
-                <h4>{{ widget.title }}</h4>
-                <p class=\"address\">
-                    {% for item in widget.content %}
-                    {{ item.line }} <br />
-                    {% endfor %}
-                </p>
-            </div>
-            {% endfor %}
-            <div class=\"widget widget_tweets\">
-                <h4 class=\"widget-title\">Latest Tweets</h4>
-                <div id=\"tw-widget1\">
-                </div>
-            </div>
-        </aside>
     </div>
 </section>
 ";

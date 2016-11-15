@@ -16,7 +16,7 @@ class __TwigTemplate_9850b24fc5485078f2c26d9caed0a9bcd8738f36a5e5d4f54b64cf03fa3
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section id=\"testimonials\">
+        echo "<!--<section id=\"testimonials\">
     <div class=\"text-container\">
         <div class=\"row\">
             <div class=\"two columns header-col\">
@@ -61,7 +61,7 @@ class __TwigTemplate_9850b24fc5485078f2c26d9caed0a9bcd8738f36a5e5d4f54b64cf03fa3
             </div>
         </div>
     </div>
-</section>
+</section>-->
 ";
     }
 
@@ -82,7 +82,7 @@ class __TwigTemplate_9850b24fc5485078f2c26d9caed0a9bcd8738f36a5e5d4f54b64cf03fa3
 
     public function getSource()
     {
-        return "<section id=\"testimonials\">
+        return "<!--<section id=\"testimonials\">
     <div class=\"text-container\">
         <div class=\"row\">
             <div class=\"two columns header-col\">
@@ -105,7 +105,7 @@ class __TwigTemplate_9850b24fc5485078f2c26d9caed0a9bcd8738f36a5e5d4f54b64cf03fa3
             </div>
         </div>
     </div>
-</section>
+</section>-->
 ";
     }
 }

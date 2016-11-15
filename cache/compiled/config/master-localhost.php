@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1478271713,
-    'checksum' => '7bd92c4f46153d0dcbd2b2b90e901642',
+    'timestamp' => 1479238634,
+    'checksum' => 'ad12389672331ba9419bbf320c8005f5',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1478271712
+            ],
+            'plugins/admin' => [
+                'file' => 'user/config/plugins/admin.yaml',
+                'modified' => 1479238366
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
@@ -19,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1477179726
+                'modified' => 1479238593
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -27,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1478271704
+                'modified' => 1479238062
             ]
         ],
         'system/config' => [
@@ -93,10 +97,10 @@ return [
                     'days_of_stats' => 7
                 ],
                 'widgets' => [
-                    'dashboard-maintenance' => true,
+                    'dashboard-maintenance' => false,
                     'dashboard-statistics' => true,
                     'dashboard-notifications' => true,
-                    'dashboard-feed' => true,
+                    'dashboard-feed' => false,
                     'dashboard-pages' => true
                 ],
                 'session' => [
@@ -122,9 +126,9 @@ return [
                         1 => '/modular'
                     ],
                     'history' => [
-                        'daily' => 30,
-                        'monthly' => 12,
-                        'visitors' => 20
+                        'daily' => '30',
+                        'monthly' => '12',
+                        'visitors' => '20'
                     ]
                 ]
             ],
@@ -475,10 +479,10 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'Free Responsive HTML5/CSS3 Template',
+            'title' => 'AquaMu | Watercolors by Muriel Libert',
             'author' => [
-                'name' => 'Peter Finla',
-                'email' => 'john@email.com'
+                'name' => 'Muriel Libert',
+                'email' => 'sprout6t@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
@@ -488,7 +492,7 @@ return [
                 'description' => 'An exclusive HTML5/CSS3 freebie by Peter Finlan, for Codrops.'
             ],
             'summary' => [
-                'enabled' => true,
+                'enabled' => false,
                 'format' => 'short',
                 'size' => 300,
                 'delimiter' => '==='
@@ -499,55 +503,8 @@ return [
                 'route' => '/blog'
             ],
             'header' => [
-                'title' => 'I\'m Jonathan Doe.',
-                'description' => 'I\'m a Manila based <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and effective visual identities for companies of all sizes around the globe. Let\'s <a class="smoothscroll" href="#about">start scrolling</a> and learn more <a class="smoothscroll" href="#about">about me</a>.'
-            ],
-            'copyright' => [
-                0 => [
-                    'line' => 'Copyright 2014 CeeVee'
-                ],
-                1 => [
-                    'line' => 'Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a>'
-                ]
-            ],
-            'social' => [
-                0 => [
-                    'url' => '#',
-                    'icon' => 'facebook'
-                ],
-                1 => [
-                    'url' => '#',
-                    'icon' => 'twitter'
-                ],
-                2 => [
-                    'url' => '#',
-                    'icon' => 'google-plus'
-                ],
-                3 => [
-                    'url' => '#',
-                    'icon' => 'linkedin'
-                ],
-                4 => [
-                    'url' => '#',
-                    'icon' => 'instagram'
-                ],
-                5 => [
-                    'url' => '#',
-                    'icon' => 'dribbble'
-                ],
-                6 => [
-                    'url' => '#',
-                    'icon' => 'skype'
-                ]
-            ],
-            'twitter' => [
-                'id' => '657554810648948736',
-                'domId' => 'tw-widget1',
-                'maxTweets' => 3,
-                'enableLinks' => 'true',
-                'showInteraction' => 'false',
-                'showImages' => 'false',
-                'showUser' => 'false'
+                'logo' => './user/themes/ceevee/images/logo.png',
+                'description' => '<span>Muriel Libert</span> is a watercolor artist from <span>Belgium</span> who has been living in the <span>United States</span> for <span>30 years.</span>'
             ]
         ],
         'streams' => [

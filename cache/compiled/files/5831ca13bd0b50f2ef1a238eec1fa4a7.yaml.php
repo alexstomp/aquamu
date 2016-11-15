@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/aquamu/user/config/site.yaml',
-    'modified' => 1479238593,
+    'modified' => 1479240674,
     'data' => [
-        'title' => 'AquaMu | Watercolors by Muriel Libert',
+        'title' => 'Watercolors by Muriel Libert',
         'author' => [
             'name' => 'Muriel Libert',
             'email' => 'sprout6t@gmail.com'

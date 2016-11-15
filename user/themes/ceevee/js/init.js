@@ -134,6 +134,32 @@
    });
 
 /*----------------------------------------------------*/
+/*	portfolio filters
+------------------------------------------------------*/
+
+$('.work-filter .filter').click(function(){
+    $('.work-filter .filter.selected').removeClass('selected');
+    $(this).addClass('selected');
+
+    var selected_filter = $(this).data('rel');
+    var work_items = $('.portfolio-item');
+
+    if (selected_filter == '') {
+        $(work_items).show();
+    } else {
+        $.each(work_items, function(index, value) {
+            var el = $(value).hide();
+            if (el.data('rel') !== selected_filter) {
+                var test = el.data('rel');
+                $(el).fadeOut();
+            } else {
+                $(el).fadeIn();
+            }
+        });
+    }
+});
+
+/*----------------------------------------------------*/
 /*	contact form
 ------------------------------------------------------*/
 

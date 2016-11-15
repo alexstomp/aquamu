@@ -1,4 +1,4 @@
-title: 'AquaMu | Watercolors by Muriel Libert'
+title: 'Watercolors by Muriel Libert'
 author:
   name: 'Muriel Libert'
   email: sprout6t@gmail.com
@@ -15,5 +15,5 @@ summary:
 blog:
   route: /blog
 header:
-  logo: './user/themes/ceevee/images/logo.png'
+  logo: ./user/themes/ceevee/images/logo.png
   description: '<span>Muriel Libert</span> is a watercolor artist from <span>Belgium</span> who has been living in the <span>United States</span> for <span>30 years.</span>'

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1479238634,
-    'checksum' => 'ad12389672331ba9419bbf320c8005f5',
+    'timestamp' => 1479246629,
+    'checksum' => '620bc535484959eb4f54aa7a520fcb53',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1477179726
+                'modified' => 1479240002
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1479238593
+                'modified' => 1479240674
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1479238062
+                'modified' => 1479246628
             ]
         ],
         'system/config' => [
@@ -134,9 +134,9 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'your@email.here',
+                'from' => 'sprout6t@gmail.com',
                 'from_name' => NULL,
-                'to' => 'your@email.here',
+                'to' => 'sprout6t@gmail.com',
                 'to_name' => NULL,
                 'mailer' => [
                     'engine' => 'mail',
@@ -479,7 +479,7 @@ return [
             ]
         ],
         'site' => [
-            'title' => 'AquaMu | Watercolors by Muriel Libert',
+            'title' => 'Watercolors by Muriel Libert',
             'author' => [
                 'name' => 'Muriel Libert',
                 'email' => 'sprout6t@gmail.com'

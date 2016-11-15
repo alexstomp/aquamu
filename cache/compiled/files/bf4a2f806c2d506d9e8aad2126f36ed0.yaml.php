@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/aquamu/user/config/plugins/email.yaml',
-    'modified' => 1477179726,
+    'modified' => 1479240002,
     'data' => [
         'enabled' => true,
-        'from' => 'your@email.here',
-        'to' => 'your@email.here',
+        'from' => 'sprout6t@gmail.com',
+        'to' => 'sprout6t@gmail.com',
         'mailer' => [
             'engine' => 'mail',
             'smtp' => [

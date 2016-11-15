@@ -1,6 +1,6 @@
 enabled: true
-from: your@email.here
-to: your@email.here
+from: sprout6t@gmail.com
+to: sprout6t@gmail.com
 mailer:
   engine: mail
   smtp:

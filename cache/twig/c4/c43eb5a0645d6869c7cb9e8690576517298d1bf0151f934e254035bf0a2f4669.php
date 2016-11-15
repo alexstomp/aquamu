@@ -16,16 +16,24 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section id=\"work\">
+        echo "<section id=\"gallery\">
     <div class=\"row\">
         <div class=\"twelve columns collapsed\">
             ";
         // line 4
         echo $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array());
         echo "
-            <div id=\"portfolio-wrapper\" class=\"bgrid-quarters s-bgrid-thirds cf\">
+            <ul class=\"work-filters\">
+                <li class=\"work-filter\"><a class=\"filter selected\" data-rel=\"\">All</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"commission\">Commissions</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"chicago\">Chicago</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"flowers\">Flowers</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"med\">Mediterranean</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"misc\">misc</a></li>
+            </ul>
+            <div id=\"portfolio-wrapper\" class=\"bgrid-thirds s-bgrid-thirds cf\">
                 ";
-        // line 6
+        // line 14
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "portfolio", array()));
         $context['loop'] = array(
@@ -42,25 +50,27 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 7
-            echo "                <div class=\"columns portfolio-item\">
+            // line 15
+            echo "                <div class=\"columns portfolio-item\" data-rel=\"";
+            echo $this->getAttribute($context["item"], "tags", array());
+            echo "\">
                     <div class=\"item-wrap\">
                         <a href=\"#modal-";
-            // line 9
+            // line 17
             echo $this->getAttribute($context["loop"], "index", array());
             echo "\" title=\"\">
                             ";
-            // line 10
-            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 215, 1 => 215), "method"), "html", array(), "method");
+            // line 18
+            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 350, 1 => 350), "method"), "html", array(), "method");
             echo "
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
                                     <h5>";
-            // line 13
+            // line 21
             echo $this->getAttribute($context["item"], "title", array());
             echo "</h5>
                                     <p>";
-            // line 14
+            // line 22
             echo $this->getAttribute($context["item"], "description", array());
             echo "</p>
                                 </div>
@@ -82,11 +92,11 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 22
+        // line 30
         echo "            </div>
         </div>
         ";
-        // line 24
+        // line 32
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "header", array()), "portfolio", array()));
         $context['loop'] = array(
@@ -103,34 +113,26 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 25
+            // line 33
             echo "        <div id=\"modal-";
             echo $this->getAttribute($context["loop"], "index", array());
             echo "\" class=\"popup-modal mfp-hide\">
             <img class=\"scale-with-grid\" src=\"";
-            // line 26
+            // line 34
             echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "url", array());
             echo "\" alt=\"\" />
             <div class=\"description-box\">
                 <h4>";
-            // line 28
+            // line 36
             echo $this->getAttribute($context["item"], "title", array());
             echo "</h4>
-                <p>";
-            // line 29
-            echo $this->getAttribute($context["item"], "content", array());
-            echo ".</p>
                 <span class=\"categories\"><i class=\"fa fa-tag\"></i>";
-            // line 30
+            // line 37
             echo $this->getAttribute($context["item"], "tags", array());
             echo "</span>
             </div>
             <div class=\"link-box\">
-                <a href=\"";
-            // line 33
-            echo $this->getAttribute($context["item"], "details", array());
-            echo "\">Details</a>
-                <a class=\"popup-modal-dismiss\">Close</a>
+                <a class=\"popup-modal-dismiss\" style=\"float: right;\">Close</a>
             </div>
         </div>
         ";
@@ -146,7 +148,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 38
+        // line 44
         echo "    </div>
 </section>
 ";
@@ -164,21 +166,29 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
 
     public function getDebugInfo()
     {
-        return array (  150 => 38,  131 => 33,  125 => 30,  121 => 29,  117 => 28,  112 => 26,  107 => 25,  90 => 24,  86 => 22,  64 => 14,  60 => 13,  54 => 10,  50 => 9,  46 => 7,  29 => 6,  24 => 4,  19 => 1,);
+        return array (  152 => 44,  131 => 37,  127 => 36,  122 => 34,  117 => 33,  100 => 32,  96 => 30,  74 => 22,  70 => 21,  64 => 18,  60 => 17,  54 => 15,  37 => 14,  24 => 4,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "<section id=\"work\">
+        return "<section id=\"gallery\">
     <div class=\"row\">
         <div class=\"twelve columns collapsed\">
             {{ page.content }}
-            <div id=\"portfolio-wrapper\" class=\"bgrid-quarters s-bgrid-thirds cf\">
+            <ul class=\"work-filters\">
+                <li class=\"work-filter\"><a class=\"filter selected\" data-rel=\"\">All</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"commission\">Commissions</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"chicago\">Chicago</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"flowers\">Flowers</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"med\">Mediterranean</a></li>
+                <li class=\"work-filter\"><a class=\"filter\" data-rel=\"misc\">misc</a></li>
+            </ul>
+            <div id=\"portfolio-wrapper\" class=\"bgrid-thirds s-bgrid-thirds cf\">
                 {% for item in page.header.portfolio %}
-                <div class=\"columns portfolio-item\">
+                <div class=\"columns portfolio-item\" data-rel=\"{{ item.tags }}\">
                     <div class=\"item-wrap\">
                         <a href=\"#modal-{{ loop.index }}\" title=\"\">
-                            {{ page.media[item.img].cropZoom(215, 215).html() }}
+                            {{ page.media[item.img].cropZoom(350, 350).html() }}
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
                                     <h5>{{ item.title }}</h5>
@@ -197,12 +207,10 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             <img class=\"scale-with-grid\" src=\"{{ page.media[item.img].url }}\" alt=\"\" />
             <div class=\"description-box\">
                 <h4>{{ item.title }}</h4>
-                <p>{{ item.content }}.</p>
                 <span class=\"categories\"><i class=\"fa fa-tag\"></i>{{ item.tags }}</span>
             </div>
             <div class=\"link-box\">
-                <a href=\"{{ item.details }}\">Details</a>
-                <a class=\"popup-modal-dismiss\">Close</a>
+                <a class=\"popup-modal-dismiss\" style=\"float: right;\">Close</a>
             </div>
         </div>
         {% endfor %}

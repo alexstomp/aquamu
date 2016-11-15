@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Applications/MAMP/htdocs/aquamu/user/config/system.yaml',
-    'modified' => 1479238062,
+    'modified' => 1479246628,
     'data' => [
         'home' => [
             'alias' => '/home'

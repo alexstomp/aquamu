@@ -3,25 +3,37 @@ title: Work
 menu: gallery
 portfolio:
     -
-        title: 'Coffee Cup'
-        img: coffee.jpg
-        tags: flowers
-    -
-        title: 'Coffee Cup'
-        img: girl.jpg
+        title: 'House Commission'
+        img: one.jpg
         tags: commission
     -
-        title: 'Coffee Cup'
-        img: girl.jpg
+        title: 'House Commission'
+        img: two.jpg
+        tags: commission
+    -
+        title: 'House Commission'
+        img: three.jpg
+        tags: commission
+    -
+        title: 'House Commission'
+        img: four.jpg
+        tags: commission
+    -
+        title: 'House Commission'
+        img: six.jpg
+        tags: commission
+    -
+        title: 'House Commission'
+        img: Frank.jpg
+        tags: commission
+    -
+        title: 'House Commission'
+        img: anne.jpg
+        tags: commission
+    -
+        title: 'Romantic Chicago'
+        img: chicago_romantic.jpg
         tags: chicago
-    -
-        title: 'Coffee Cup'
-        img: girl.jpg
-        tags: med
-    -
-        title: 'Coffee Cup'
-        img: girl.jpg
-        tags: misc
 ---
 
 #Gallery

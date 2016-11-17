@@ -15,7 +15,7 @@
                 <div class="columns portfolio-item" data-rel="{{ item.tags }}">
                     <div class="item-wrap">
                         <a href="#modal-{{ loop.index }}" title="">
-                            {{ page.media[item.img].cropZoom(250, 250).html() }}
+                            {{ page.media[item.img].cropZoom(250, 250).html('','','lazy') }}
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>{{ item.title }}</h5>
@@ -31,7 +31,7 @@
         </div>
         {% for item in page.header.portfolio %}
         <div id="modal-{{ loop.index }}" class="popup-modal mfp-hide">
-            <img class="scale-with-grid" src="{{ page.media[item.img].url }}" alt="" />
+            <img class="scale-with-grid" src="{{ page.media[item.img].url.html('','','lazy') }}" alt="" />
             <div class="description-box">
                 <h4>{{ item.title }}</h4>
                 <span class="categories"><i class="fa fa-tag"></i>{{ item.tags }}</span>

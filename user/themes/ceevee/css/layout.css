@@ -442,9 +442,21 @@ ul#nav li.current a { color: #F06000; }
     font-size: 13px;
     font-weight: bold;
 }
+#gallery .work-filters .work-filter a:hover {
+    background-color: rgba(17, 171, 176, 0.2);
+    border-color: rgba(17, 171, 176, 0.3);
+    cursor: pointer;
+    color: white;
+
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
 #gallery .work-filters .work-filter a.selected {
 	color: #fff;
-	background-color: #11ABB0;
+	background-color: rgba(17, 171, 176, 1);
     border-color: #019BA0;
     font-weight: bold;
 }
@@ -542,7 +554,8 @@ ul#nav li.current a { color: #F06000; }
 
 /* popup modal */
 .popup-modal {
-	max-width: 550px;
+    width: 90vw;
+	max-width: 750px;
 	background: #fff;
 	position: relative;
 	margin: 0 auto;
@@ -573,6 +586,8 @@ ul#nav li.current a { color: #F06000; }
    padding: 18px 36px;
    background: #111;
    text-align: left;
+   float: left;
+   width: 100%;
 }
 .popup-modal .link-box a {
    color: #fff;

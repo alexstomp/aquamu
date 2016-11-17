@@ -31,7 +31,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
                 <li class=\"work-filter\"><a class=\"filter\" data-rel=\"med\">Mediterranean</a></li>
                 <li class=\"work-filter\"><a class=\"filter\" data-rel=\"misc\">misc</a></li>
             </ul>
-            <div id=\"portfolio-wrapper\" class=\"bgrid-thirds s-bgrid-thirds cf\">
+            <div id=\"portfolio-wrapper\" class=\"bgrid-quarters s-bgrid-quarters cf\">
                 ";
         // line 14
         $context['_parent'] = $context;
@@ -61,7 +61,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             echo "\" title=\"\">
                             ";
             // line 18
-            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 350, 1 => 350), "method"), "html", array(), "method");
+            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 250, 1 => 250), "method"), "html", array(), "method");
             echo "
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
@@ -183,12 +183,12 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
                 <li class=\"work-filter\"><a class=\"filter\" data-rel=\"med\">Mediterranean</a></li>
                 <li class=\"work-filter\"><a class=\"filter\" data-rel=\"misc\">misc</a></li>
             </ul>
-            <div id=\"portfolio-wrapper\" class=\"bgrid-thirds s-bgrid-thirds cf\">
+            <div id=\"portfolio-wrapper\" class=\"bgrid-quarters s-bgrid-quarters cf\">
                 {% for item in page.header.portfolio %}
                 <div class=\"columns portfolio-item\" data-rel=\"{{ item.tags }}\">
                     <div class=\"item-wrap\">
                         <a href=\"#modal-{{ loop.index }}\" title=\"\">
-                            {{ page.media[item.img].cropZoom(350, 350).html() }}
+                            {{ page.media[item.img].cropZoom(250, 250).html() }}
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
                                     <h5>{{ item.title }}</h5>

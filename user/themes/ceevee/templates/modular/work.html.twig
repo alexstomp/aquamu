@@ -10,12 +10,12 @@
                 <li class="work-filter"><a class="filter" data-rel="med">Mediterranean</a></li>
                 <li class="work-filter"><a class="filter" data-rel="misc">misc</a></li>
             </ul>
-            <div id="portfolio-wrapper" class="bgrid-thirds s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-quarters cf">
                 {% for item in page.header.portfolio %}
                 <div class="columns portfolio-item" data-rel="{{ item.tags }}">
                     <div class="item-wrap">
                         <a href="#modal-{{ loop.index }}" title="">
-                            {{ page.media[item.img].cropZoom(350, 350).html() }}
+                            {{ page.media[item.img].cropZoom(250, 250).html() }}
                             <div class="overlay">
                                 <div class="portfolio-item-meta">
                                     <h5>{{ item.title }}</h5>

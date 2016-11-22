@@ -4,13 +4,13 @@ from_name:
 to:
 to_name:
 mailer:
-  engine: mail
+  engine: smtp
   smtp:
-    server: localhost
-    port: 25
+    server: in-v3.mailjet.com
+    port: 587
     encryption: none
-    user: ''
-    password: ''
+    user: 'e6e4b616832aa353ceaa93de72d6bbdb'
+    password: '547396a15d276a1375acceda67de1c71'
   sendmail:
     bin: '/usr/sbin/sendmail'
 content_type: text/html

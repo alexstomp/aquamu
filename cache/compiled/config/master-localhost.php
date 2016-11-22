@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1479394560,
-    'checksum' => '28d9eb770ad43bca1c5f9f5eb470324a',
+    'timestamp' => 1479839210,
+    'checksum' => 'fdba65fe41c59848b4f6a70935fa82f8',
     'files' => [
         'user/config' => [
             'media' => [
@@ -15,7 +15,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1479240002
+                'modified' => 1479839207
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -59,7 +59,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
-                'modified' => 1477179728
+                'modified' => 1479839077
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -139,13 +139,13 @@ return [
                 'to' => 'sprout6t@gmail.com',
                 'to_name' => NULL,
                 'mailer' => [
-                    'engine' => 'mail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
+                        'server' => 'in-v3.mailjet.com',
+                        'port' => 587,
                         'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'user' => 'e6e4b616832aa353ceaa93de72d6bbdb',
+                        'password' => '547396a15d276a1375acceda67de1c71'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'

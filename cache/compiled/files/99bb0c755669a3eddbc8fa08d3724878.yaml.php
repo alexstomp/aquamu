@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
-    'filename' => '/Applications/MAMP/htdocs/aquamu/user/plugins/email/email.yaml',
+    'filename' => 'plugins://email/email.yaml',
     'modified' => 1479839077,
     'data' => [
         'enabled' => true,

@@ -55,7 +55,7 @@ class __TwigTemplate_475a4e00858fd0daaeec9856d5296cec505a3b9f3eb88d32b6524b81c08
         // line 32
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 43
+        // line 44
         echo "        ";
         echo $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "js", array(), "method");
         echo "
@@ -184,9 +184,11 @@ class __TwigTemplate_475a4e00858fd0daaeec9856d5296cec505a3b9f3eb88d32b6524b81c08
         echo "            ";
         $this->getAttribute((isset($context["assets"]) ? $context["assets"] : null), "addJs", array(0 => "theme://js/init.js"), "method");
         // line 41
-        echo "            ";
-        $this->loadTemplate("partials/twFetcher.html.twig", "partials/base.html.twig", 41)->display($context);
+        echo "            <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js\"></script>
+            ";
         // line 42
+        $this->loadTemplate("partials/twFetcher.html.twig", "partials/base.html.twig", 42)->display($context);
+        // line 43
         echo "        ";
     }
 
@@ -202,7 +204,7 @@ class __TwigTemplate_475a4e00858fd0daaeec9856d5296cec505a3b9f3eb88d32b6524b81c08
 
     public function getDebugInfo()
     {
-        return array (  190 => 42,  187 => 41,  184 => 40,  181 => 39,  178 => 38,  175 => 37,  173 => 36,  169 => 35,  164 => 34,  161 => 33,  158 => 32,  154 => 31,  151 => 30,  148 => 29,  143 => 27,  139 => 28,  136 => 27,  133 => 26,  129 => 25,  126 => 24,  123 => 23,  119 => 17,  116 => 16,  113 => 15,  110 => 14,  107 => 13,  104 => 12,  98 => 19,  93 => 18,  91 => 12,  87 => 11,  84 => 10,  82 => 9,  74 => 8,  71 => 7,  68 => 6,  59 => 43,  56 => 32,  53 => 29,  50 => 26,  48 => 23,  44 => 21,  42 => 6,  37 => 4,  33 => 3,  29 => 2,  26 => 1,);
+        return array (  192 => 43,  190 => 42,  187 => 41,  184 => 40,  181 => 39,  178 => 38,  175 => 37,  173 => 36,  169 => 35,  164 => 34,  161 => 33,  158 => 32,  154 => 31,  151 => 30,  148 => 29,  143 => 27,  139 => 28,  136 => 27,  133 => 26,  129 => 25,  126 => 24,  123 => 23,  119 => 17,  116 => 16,  113 => 15,  110 => 14,  107 => 13,  104 => 12,  98 => 19,  93 => 18,  91 => 12,  87 => 11,  84 => 10,  82 => 9,  74 => 8,  71 => 7,  68 => 6,  59 => 44,  56 => 32,  53 => 29,  50 => 26,  48 => 23,  44 => 21,  42 => 6,  37 => 4,  33 => 3,  29 => 2,  26 => 1,);
     }
 
     public function getSource()
@@ -247,6 +249,7 @@ class __TwigTemplate_475a4e00858fd0daaeec9856d5296cec505a3b9f3eb88d32b6524b81c08
             {% do assets.addJs('theme://js/jquery.fittext.js') %}
             {% do assets.addJs('theme://js/magnific-popup.js') %}
             {% do assets.addJs('theme://js/init.js') %}
+            <script type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js\"></script>
             {% include 'partials/twFetcher.html.twig' %}
         {% endblock %}
         {{ assets.js() }}

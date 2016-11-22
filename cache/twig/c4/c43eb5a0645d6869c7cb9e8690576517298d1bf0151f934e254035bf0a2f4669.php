@@ -61,7 +61,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             echo "\" title=\"\">
                             ";
             // line 18
-            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 250, 1 => 250), "method"), "html", array(), "method");
+            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "cropZoom", array(0 => 250, 1 => 250), "method"), "html", array(0 => "", 1 => "", 2 => "lazy"), "method");
             echo "
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
@@ -119,7 +119,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
             echo "\" class=\"popup-modal mfp-hide\">
             <img class=\"scale-with-grid\" src=\"";
             // line 34
-            echo $this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "url", array());
+            echo $this->getAttribute($this->getAttribute($this->getAttribute($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "media", array()), $this->getAttribute($context["item"], "img", array()), array(), "array"), "url", array()), "html", array(0 => "", 1 => "", 2 => "lazy"), "method");
             echo "\" alt=\"\" />
             <div class=\"description-box\">
                 <h4>";
@@ -188,7 +188,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
                 <div class=\"columns portfolio-item\" data-rel=\"{{ item.tags }}\">
                     <div class=\"item-wrap\">
                         <a href=\"#modal-{{ loop.index }}\" title=\"\">
-                            {{ page.media[item.img].cropZoom(250, 250).html() }}
+                            {{ page.media[item.img].cropZoom(250, 250).html('','','lazy') }}
                             <div class=\"overlay\">
                                 <div class=\"portfolio-item-meta\">
                                     <h5>{{ item.title }}</h5>
@@ -204,7 +204,7 @@ class __TwigTemplate_428c382d7465406142c04c8150d206fe368a6a04955ef0ca4940fad207a
         </div>
         {% for item in page.header.portfolio %}
         <div id=\"modal-{{ loop.index }}\" class=\"popup-modal mfp-hide\">
-            <img class=\"scale-with-grid\" src=\"{{ page.media[item.img].url }}\" alt=\"\" />
+            <img class=\"scale-with-grid\" src=\"{{ page.media[item.img].url.html('','','lazy') }}\" alt=\"\" />
             <div class=\"description-box\">
                 <h4>{{ item.title }}</h4>
                 <span class=\"categories\"><i class=\"fa fa-tag\"></i>{{ item.tags }}</span>
